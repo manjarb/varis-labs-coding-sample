@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS rules</title>
+  </head>
+
+  <style>
+    /* h1 {
+      color: red;
+      font-size: 50px;
+      text-align: center;
+      font-family: Helvetica;
+    } */
+
+    * {
+      box-sizing: border-box;
+    }
+
+    h2 {
+      color: seagreen;
+      font-size: 40px;
+      text-align: left;
+      font-family: Monaco;
+    }
+
+    h2:first-child {
+      color: blue;
+    }
+
+    /* h1,
+    h2,
+    h3 {
+      color: purple !important;
+    } */
+
+    .branding {
+      color: blue;
+    }
+
+    #blog-title {
+      color: yellow;
+    }
+
+    .blog-title-special {
+      color: red !important;
+    }
+
+    .content {
+      color: green;
+    }
+
+    .content:hover {
+      color: blue;
+    }
+
+    .content-big {
+      font-size: 60px;
+    }
+
+    .content.content-big {
+      background-color: red;
+    }
+
+    .content.content-big:hover,
+    .content.content-big:focus,
+    .content.content-big:visited {
+      background-color: yellow;
+    }
+
+    .first-child-example {
+      color: crimson;
+    }
+
+    .first-child-example:first-child {
+      color: green;
+    }
+
+    .chapter::after {
+      content: "abc";
+      font-size: 30px;
+      color: red;
+    }
+
+    .chapter::before {
+      content: "before";
+      font-size: 30px;
+      color: blue;
+    }
+
+    p {
+      font-size: 40px;
+      margin: 0;
+    }
+
+    .inline-block-content,
+    .new-div {
+      display: inline;
+    }
+    /* block, inline, inline-block, none, flex, grid */
+
+    h1 {
+      margin: 0;
+    }
+
+    .box-1 {
+      width: 300px;
+      background-color: red;
+      color: white;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 20px;
+      /* margin-bottom: 20px; */
+      border: 20px black dotted;
+
+      /* margin: 10px 20px 30px 40px; */
+      /* margin: 20px 30px; */
+      padding: 20px 30px;
+    }
+
+    .box-2 {
+      width: 300px;
+      background-color: green;
+      color: white;
+    }
+  </style>
+
+  <!-- tag > class > id > important -->
+
+  <body>
+    <!-- <h1>This is h1</h1>
+
+    <div>
+      <h2>This is h2</h2>
+      <h2>This is h2</h2>
+      <h2>This is h2</h2>
+    </div>
+
+    <h1 class="branding">This is h1 branding</h1>
+
+    <h1 id="blog-title" class="blog-title-special">This is blog title</h1>
+
+    <p class="content content-big">This is content</p>
+
+    <ol>
+      <li class="first-child-example">First</li>
+      <li class="first-child-example">Second</li>
+      <li class="first-child-example">Third</li>
+    </ol>
+
+    <div class="chapter">This is a chapter of my book.</div>
+
+    <div class="chapter">This is a second chapter of my book.</div>
+
+    <div>
+      <p class="inline-block-content">This is new <span> Content </span></p>
+      <div class="new-div">This is new Div</div>
+      <p class="inline-block-content">This is another content</p>
+    </div>
+
+    <div>
+      <p>content</p>
+    </div> -->
+
+    <div class="box-1"><h1>content 1</h1></div>
+    <div class="box-2"><h1>content 2</h1></div>
+    <div class="box-3"><h1>content 3</h1></div>
+  </body>
+</html>

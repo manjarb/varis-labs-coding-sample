@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+.brand {
+  font-family: "Snell Roundhand";
+  font-size: 60px;
+  text-align: center;
+  font-weight: normal;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  border: 3px solid black;
+}
+
+.section-link {
+  color: #666;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Futura";
+}
+
+.section-link:hover {
+  text-decoration: underline;
+}
+
+.article-title {
+  font-size: 30px;
+  font-weight: normal;
+  text-align: center;
+  font-style: italic;
+}
+
+.story {
+  padding: 10px;
+  border-left: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+.article-img {
+  width: 250px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+  display: block;
+}
+
+.page {
+  display: grid;
+  grid-template-areas:
+    "story-1 story-2 story-3"
+    "story-4 story-5 story-5"
+  ;
+}
+
+.story-1 {
+  grid-area: story-1;
+}
+
+.story-2 {
+  grid-area: story-2;
+}
+
+.story-3 {
+  grid-area: story-3;
+}
+
+
+.story-4 {
+  grid-area: story-4;
+}
+
+.story-5 {
+  grid-area: story-5;
+}
+
+.story-3,
+.story-5 {
+  border-right: 3px solid black;
+}

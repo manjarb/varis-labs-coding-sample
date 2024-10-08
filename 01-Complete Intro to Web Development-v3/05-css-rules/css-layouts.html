@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    .box-1 {
+      border: 1px solid black;
+      color: white;
+      background-color: blue;
+      height: 150px;
+      width: 300px;
+    }
+    .box-2 {
+      border: 1px solid black;
+      color: white;
+      background-color: red;
+      height: 100px;
+      width: 300px;
+    }
+    .box-3 {
+      border: 1px solid black;
+      color: white;
+      background-color: green;
+      height: 200px;
+      width: 100px;
+    }
+
+    .floated div {
+      float: right;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-direction: row-reverse;
+      border: 3px solid black;
+      flex-wrap: wrap;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @keyframes dog {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .spinny-text {
+      animation: dog 1s infinite linear;
+      display: inline-block;
+    }
+  </style>
+  <body>
+    <h1>H1 test</h1>
+    <!-- <div class="floated">
+      <div class="box-1">1</div>
+      <div class="box-2">2</div>
+      <div class="box-3">3</div>
+    </div> -->
+
+    <!-- <div class="flex-container">
+      <div class="box-1">
+        <div>
+          <h2>11</h2>
+          <h2>22</h2>
+          <h2>33</h2>
+        </div>
+      </div>
+      <div class="box-2">2</div>
+      <div class="box-3">3</div>
+      <div class="box-2">2</div>
+      <div class="box-3">3</div>
+      <div class="box-2">2</div>
+      <div class="box-3">3</div>
+    </div> -->
+
+    <div class="grid">
+      <img
+        class="grid-picture"
+        src="http://pets-images.dev-apis.com/pets/dog25.jpg"
+        alt="a doggy"
+      />
+      <img
+        class="grid-picture"
+        src="http://pets-images.dev-apis.com/pets/dog26.jpg"
+        alt="a doggy"
+      />
+      <img
+        class="grid-picture"
+        src="http://pets-images.dev-apis.com/pets/dog27.jpg"
+        alt="a doggy"
+      />
+      <img
+        class="grid-picture"
+        src="http://pets-images.dev-apis.com/pets/dog28.jpg"
+        alt="a doggy"
+      />
+    </div>
+    <div class="spinny-text">
+      <h1>Spin</h1>
+    </div>
+  </body>
+</html>

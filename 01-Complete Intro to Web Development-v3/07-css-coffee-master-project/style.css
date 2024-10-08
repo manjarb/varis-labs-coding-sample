@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #efefef;
+  font-family: "Open Sans", sans-serif;
+}
+
+.main-nav {
+  background-color: #43281c;
+  color: #fbf2c0;
+  font-size: 16px;
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+}
+
+.main-nav img {
+  height: 25px;
+  position: relative;
+  top: 3px;
+}
+
+.page {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+}
+
+.box {
+  background-color: #eee1d5;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.box-title {
+  color: #885a2d;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.item {
+  border-bottom: 2px solid #DDB892;
+  display: grid;
+  padding: 10px 0;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-areas:
+    "quantity title price"
+    "quantity options price"
+  ;
+}
+
+.item-quantity {
+  grid-area: quantity;
+}
+
+.item-title {
+  grid-area: title;
+}
+
+.item-price {
+  grid-area: price;
+}
+
+.item-options-list {
+  grid-area: options;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.color-yellow {
+  color: #B08968;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-label {
+  color: #885a2d;
+  background-color: #eee1d5;
+  font-size: 11px;
+  position: absolute;
+  left: 25px;
+  top: -8px;
+  padding: 0 2px;
+}
+
+.input {
+  background-color: transparent;
+  border: 2px solid #885a2d;
+  padding: 8px;
+  border-radius: 100px;
+  width: 100%;
+  font-size: 18px;
+  text-indent: 18px;
+}
+
+.input-small {
+  max-width: 200px;
+}
+
+.total-table {
+  width: 500px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.total-table td {
+  padding: 10px;
+}
+
+.total-table td:last-child {
+  text-align: right;
+}
+
+.final-total {
+  font-weight: bold;
+}
+
+.checkout-box {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.checkout-button {
+  background-color: #deb993;
+  border: none;
+  padding: 10px 30px;
+  width: 100%;
+  border-radius: 100px;
+  font-size: 16px;
+}
